@@ -1,12 +1,12 @@
 {
-    "version": "0.9.6",
+    "version": "0.9.7",
     "description": "Storm sewer design and analysis: Rational method, Manning, HGL/EGL backwater, HEC-22 inlets.",
     "homepage": "https://github.com/mf4633/stormsewer",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mf4633/stormsewer/releases/download/v0.9.6/StormSewer-windows-x64.zip",
-            "hash": "488326a4b928fdd0527b132835ec942989ac44220ebf7dd199d64dfa5f328049"
+            "url": "https://github.com/mf4633/stormsewer/releases/download/v0.9.7/StormSewer-windows-x64.zip",
+            "hash": "60165505c8637a34aaa81711c52cef0e5f7557cd5baee7790a56abab3a766214"
         }
     },
     "bin": "StormSewer.exe",
