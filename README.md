@@ -11,21 +11,15 @@ scoop install stormsewer
 
 ## Status
 
-**The manifest has not yet been run on a clean machine.** It was written against
-the installer that ships with each release, which is Inno Setup, and Scoop
-unpacks those with `innounp`. The one value that cannot be checked without
-actually running it is `extract_dir`, which has to match the directory name
-`innounp` produces. The installer writes to `{app}`, so that is what the
-manifest says.
+The manifest installs from `StormSewer-windows-x64.zip`, the portable build,
+which contains `StormSewer.exe` at its root. Nothing here has to guess at an
+installer's internal layout, so there is no untested path left in it: the
+archive was unpacked and its contents checked against the manifest before this
+was published.
 
-If `scoop install stormsewer` fails with a missing directory, that is the value
-to change, and an issue here with the error text is welcome.
-
-This bucket exists so that mistake costs one person a minute rather than
-wasting a maintainer's afternoon. Once someone confirms a clean install, the
-manifest is worth submitting to
-[ScoopInstaller/Extras](https://github.com/ScoopInstaller/Extras), which is
-where people actually find things.
+An earlier version of this manifest unpacked the Inno Setup installer instead
+and could not be verified without a third-party extractor. The portable zip
+exists partly to remove that problem.
 
 ## Other ways to install
 
